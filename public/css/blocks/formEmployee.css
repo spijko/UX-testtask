@@ -1,3 +1,5 @@
-label[for="ipName"]{
-	color: blue;
+#btnAdd{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
 }

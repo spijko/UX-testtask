@@ -10,6 +10,7 @@
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
 		<link rel="stylesheet" href="css/c.css">
 		<link rel="stylesheet" href="css/s.css">
+		<link rel="stylesheet" href="css/app/spa.min.css">
 	</head>
 	<body class="navbar-fixed no-breadcrumbs">
 
@@ -92,6 +93,13 @@
 							id: "ipFullName",
 							inputType: "text",
 							placeholder: "full name"
+						},
+						{
+							tmpl: "input",
+							label: "Date of Birth:",
+							id: "ipDoB",
+							inputType: "text",
+							placeholder: "date of birth"
 						},
 						{
 							tmpl: "input",
@@ -188,10 +196,12 @@
 					head.append("<link rel=\"stylesheet\" href=\"css/blocks/" + css + ".css\">");
 				}
 			},
-			insertStyle = function(css){
+			insertStyle = function(css, cont){
 				return $.ajax({
 					url: "/css/blocks/" + css + ".css",
 					dataType: "text"
+				}).then(function(cssCode){
+					cont.append("<style>" + cssCode + "</style>");
 				});
 			},
 			process = function(container, blocks){
@@ -207,9 +217,7 @@
 					if(block.blocks){	
 						process(cont, block.blocks);
 						addStyle(block.style);
-						insertStyle(block.customStyle).then(function(cssCode){
-							cont.append("<style>" + cssCode + "</style>");
-						});
+						insertStyle(block.customStyle, cont);
 					}
 				}
 			};

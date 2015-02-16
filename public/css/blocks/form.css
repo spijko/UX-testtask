@@ -1,7 +1,15 @@
-.form-group{
+.form {
+	height: 400px;
+	position: relative;
+}
+.form .form-group{
 	margin-bottom: 10px;
 }
 
-.form-group .control-label {
+.form .form-group .control-label {
 	font-size: 75%; 
+}
+
+.form>.block-dropdown>.dropdown-toggle{
+	background-color: red;
 }
