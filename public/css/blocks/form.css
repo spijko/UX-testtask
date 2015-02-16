@@ -1,0 +1,7 @@
+.form-group{
+	margin-bottom: 10px;
+}
+
+.form-group .control-label {
+	font-size: 75%; 
+}

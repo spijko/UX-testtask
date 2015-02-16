@@ -1,0 +1,9 @@
+<div class="btn-group block-dropdown" id="<%=id%>">
+	<button type="button" class="btn btn-success btn-sm dropdown-toggle js-button" data-toggle="dropdown"><span class="caption"></span><%= caption %><span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<% _.each(options, function(option) { %>
+			<li><a href="#" class="js-option" data-value="<%=option.value%>" data-id="<%=option.id%>"><%=option.text%></a></li>
+		<% }); %>
+	</ul>
+</div>

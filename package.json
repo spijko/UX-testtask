@@ -1,0 +1,42 @@
+{
+  "name": "bootstrap-exercise",
+  "version": "0.0.1",
+  "author": "Picanteverde <picanteverde@gmail.com>",
+  "description": "bootstrap-exercise",
+  "contributors": [
+    {
+      "name": "Alejandro Hernandez",
+      "email": "picanteverde@gmail.com",
+      "web": "http://picanteverde.wordpress.com/"
+    }
+  ],
+  "keywords": [
+    "init",
+    "node",
+    "app",
+    "bootstrap"
+  ],
+  "dependencies": {
+    "express": "~3.1.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.3.0",
+    "grunt-contrib-concat": "~0.1.3",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-less": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.5.0",
+    "mocha": "~1.11.0",
+    "chai": "~1.6.1",
+    "grunt-contrib-jst": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-mocha": "~0.4.0",
+    "grunt-contrib-requirejs": "~0.4.1"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
