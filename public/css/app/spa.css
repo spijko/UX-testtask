@@ -31,3 +31,8 @@
   right: 10px;
   left: auto;
 }
+.label-bigger {
+  font-size: 220%;
+  margin-bottom: 10px;
+  display: inline-block;
+}

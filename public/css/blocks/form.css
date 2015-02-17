@@ -1,6 +1,8 @@
 .form {
 	height: 400px;
 	position: relative;
+	border: 1px solid gray;
+	margin-bottom: 5px; 
 }
 .form .form-group{
 	margin-bottom: 10px;
