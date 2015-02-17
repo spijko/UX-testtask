@@ -22,3 +22,9 @@ Tasks:
 4. Change the color of the label "Name" in the Person Form to blue.
 5. The two forms are currently positioned vertically. Add code positioning them side by side, except on mobile devices.
 6. Add a new form for Company, asking for company name and number of employees. This form should be 100% wide on all devices. Style the "number of employees" label to be red.
+
+### Submitting the solution ###
+
+Do not commit the modified files to this repository, and do not create a pull request. 
+
+Instead, create a public repository under your own Github account, and provide the solution to each of the test tasks as a separate commit. Then send the repository link to skanareykin@dev.lawfirmmatrix.com.
